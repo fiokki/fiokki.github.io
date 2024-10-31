@@ -14,9 +14,9 @@ img {
 }
 
 video {
-    height: 100%;
-    width: 100%;
-    display: block;
+    height: 100vh;
+    width: 100vh;
+    display: none;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -77,10 +77,3 @@ body {
 }
 
 
-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Keeps aspect ratio while covering the screen */
-    margin: 0;
-    padding: 0;
-}

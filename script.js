@@ -4,6 +4,7 @@ window.onload = function() {
     // Show puppy for 2.5 seconds, then hide and show jumpscare video
     window.setTimeout(function() {
         document.getElementById('cute').style.display = 'none';
+        document.getElementsById('video').style.display = 'flex';
         document.getElementById('scare').style.display = 'flex';
 
         var video = document.getElementById('jumpvideo');
