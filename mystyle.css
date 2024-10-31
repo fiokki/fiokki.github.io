@@ -63,6 +63,36 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling on mobile */
+}
+
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Keeps aspect ratio while covering the screen */
+    margin: 0;
+    padding: 0;
+}
+
+
+.jumpscare {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
