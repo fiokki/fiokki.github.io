@@ -42,6 +42,18 @@ body {
     left: 0;
 }
 
+.ig-button { 
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px; 
+    cursor: pointer; 
+} 
+
+.ig-button:hover { background-color: #e55300; }
+
 .jumpscare {
     z-index: 2; /* Ensure jumpscare video is layered on top */
 }
