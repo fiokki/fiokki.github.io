@@ -1,51 +1,22 @@
-h1 {
-    text-align: center;
-    font-family: "Creepster";
-    color: orangered;
-    font-size: 50px;
-}
-
-img {
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Keeps aspect ratio while covering the screen */
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevents scrolling on mobile */
-    width: 100vw;
-    height: 100vh;
-}
-
-.container, .jumpscare, .instagram {
-    display: none;
-    width: 100vw;
-    height: 100vh;
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 100vh;
+    margin: 0;
 }
-
-.jumpscare {
-    z-index: 2; /* Ensure jumpscare video is layered on top */
+.flashing-button {
+    padding: 20px 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    animation: flash 1s infinite;
 }
-
-.instagram {
-    z-index: 3; /* Layer Instagram screen on top */
+@keyframes flash {
+    0% { background-color: #ff0000; }
+    33% { background-color: #00ff00; }
+    66% { background-color: #0000ff; }
+    100% { background-color: #ff0000; }
 }
